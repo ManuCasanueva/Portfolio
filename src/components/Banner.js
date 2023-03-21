@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.svg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
+
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import { HashLink } from 'react-router-hash-link';
@@ -60,6 +61,7 @@ export const Banner = () => {
                 <h1>{`Hi! I'm Manuel Casanueva`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Full Stack Developer" ]'><span className="wrap">{text}</span></span></h1>
                   <p>Full Stack Developer graduated from "Henry" a very demanding bootcamp, which has more than +800 hours, in the 4 months that last, I learned technologies like React-Redux, javascript, PostgreSQL, Express y Next.Js in the Back End.
 Experience as Henry Assistant, which is based on management of a group of students, fostering their Soft Skills learning</p>
+                      {/* <button className="vvd"><a download href="cv" class="btn-descargar">Descargar CV</a></button>   */}
                   {/* <HashLink to='#connect'>
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
                   <HashLink to='#connect'> */}
