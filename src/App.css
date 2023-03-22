@@ -59,8 +59,9 @@ img {
 }
 
 button {
-  border: 0;
+  border: 1px solid white ;
   background-color: transparent;
+  
 }
 
 input:focus, textarea:focus, select:focus {
@@ -166,6 +167,7 @@ span.navbar-text {
   z-index: 1;
 }
 .navbar-text button::before {
+  color: #121212;
   content: "";
   width: 0%;
   height: 100%;
@@ -176,11 +178,23 @@ span.navbar-text {
   z-index: -1;
   transition: 0.3s ease-in-out;
 }
+
+.btn-descargar{
+  text-decoration: none ;
+  color: white;
+}
+
+.btn-descargar :hover::before {
+  text-decoration: none ;
+  color: #000;
+}
+
 .navbar-text button:hover {
   color: #121212;
 }
 .navbar-text button:hover::before {
 	content: "";
+  color: #121212;
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -305,13 +319,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill {
   padding: 0 0 50px 0;
   position: relative;
+  background-image: linear-gradient(to bottom, #320934, #320e35, #321236, #331637, #331938, #301935, #2c1933, #291930, #211629, #1a1222, #140c1b, #0c0514);
 }
 .skill-bx {
   background: #151515;
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
-  margin-top: -60px;
+  margin-top: 50px;
 }
 .skill h2 {
 	font-size: 45px;
@@ -356,7 +371,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 80px 0;
   position: relative;
  
-  background-color: black;
+  background-image: linear-gradient(to bottom, #0c0514, #140c1b, #1a1222, #211629, #291930, #2a182e, #2b182b, #2c1729, #24131f, #1c0e16, #12070c, #000000);
 }
 .project h2 {
 	font-size: 45px;
@@ -487,7 +502,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Projects Css ************/
 .contact {
-  background-image: linear-gradient(to bottom, #151516, #1c1f41, #23276d, #322c9b, #4f2ac7, #5b23cd, #6718d2, #7400d6, #6700b8, #5a009c, #4c0080, #3e0066);
+  background-image: linear-gradient(to bottom, #150130, #250c4b, #3b1168, #551384, #7112a1, #770ea4, #7e07a6, #8400a9, #730094, #63017f, #53016b, #440157);
   padding: 60px 0 200px 0;
 }
 .contact img {
@@ -560,7 +575,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Footer Css ************/
 .footer {
   padding: 0 0 50px 0;
-  background-image: url('./assets/img/footer-bg.png');
+  background-color: #121212;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;

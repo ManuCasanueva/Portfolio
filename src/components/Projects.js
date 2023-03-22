@@ -34,7 +34,7 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projects</h2>
-                <button color="white" >Let’s Connect</button>
+                
                 <p>Some of the projects that i made in the last year.</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                  
