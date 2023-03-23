@@ -1,8 +1,8 @@
 import js from "../assets/img/skills/js.png";
 import react from "../assets/img/skills/react.png";
 import node from "../assets/img/skills/node3.png"
-import css from "../assets/img/skills/css.png"
-import html from "../assets/img/skills/html.png"
+import css from "../assets/img/skills/css-3.png"
+import html from "../assets/img/skills/html-5.png"
 import postgres from "../assets/img/skills/postgre.png"
 
 import Carousel from 'react-multi-carousel';
