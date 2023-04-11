@@ -1,11 +1,9 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.svg";
-import { ArrowRightCircle } from 'react-bootstrap-icons';
-
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import { HashLink } from 'react-router-hash-link';
+
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -25,24 +23,13 @@ export const Banner = () => {
   }, [text])
 
   function downloadCV() {
-    // contenido del currículum vitae
     const cvContent = "../assets/Curriculum-Manuel.pdf";
-  
-    // crear objeto Blob
     const cvBlob = new Blob([cvContent], { type: 'application/pdf' });
-  
-    // crear URL temporal para el objeto Blob
     const cvURL = URL.createObjectURL(cvBlob);
-  
-    // crear enlace para descargar archivo
     const downloadLink = document.createElement('a');
     downloadLink.href = cvURL;
     downloadLink.download = "Curriculum-Manuel.pdf";
-  
-    // hacer clic en el enlace para iniciar la descarga
     downloadLink.click();
-  
-    // liberar la URL temporal
     URL.revokeObjectURL(cvURL);
   }
   
@@ -88,9 +75,6 @@ export const Banner = () => {
 
                       <button id="download-button" onClick={downloadCV} className="vvd"   class="btn-descargar">Download CV</button>  
                     </span>
-                  {/* <HashLink to='#connect'>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
-                  <HashLink to='#connect'> */}
               </div>}
             </TrackVisibility>
           </Col>
