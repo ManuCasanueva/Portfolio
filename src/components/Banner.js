@@ -24,6 +24,29 @@ export const Banner = () => {
     return () => { clearInterval(ticker) };
   }, [text])
 
+  function downloadCV() {
+    // contenido del currículum vitae
+    const cvContent = "../assets/Curriculum-Manuel.pdf";
+  
+    // crear objeto Blob
+    const cvBlob = new Blob([cvContent], { type: 'application/pdf' });
+  
+    // crear URL temporal para el objeto Blob
+    const cvURL = URL.createObjectURL(cvBlob);
+  
+    // crear enlace para descargar archivo
+    const downloadLink = document.createElement('a');
+    downloadLink.href = cvURL;
+    downloadLink.download = "Curriculum-Manuel.pdf";
+  
+    // hacer clic en el enlace para iniciar la descarga
+    downloadLink.click();
+  
+    // liberar la URL temporal
+    URL.revokeObjectURL(cvURL);
+  }
+  
+
   const tick = () => {
     let i = loopNum % toRotate.length;
     let fullText = toRotate[i];
@@ -63,7 +86,7 @@ export const Banner = () => {
                     Experience as Henry Assistant, which is based on management of a group of students, fostering their Soft Skills learning</p>
                     <span className="navbar-text" style={{ marginTop:5 }} >
 
-                      <button className="vvd"  ><a download="" href="../assets/Curriculum-Manuel.pdf" class="btn-descargar">Download CV</a></button>  
+                      <button id="download-button" onClick={downloadCV} className="vvd"   class="btn-descargar">Download CV</button>  
                     </span>
                   {/* <HashLink to='#connect'>
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
