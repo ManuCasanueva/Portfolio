@@ -14,7 +14,7 @@ export const Projects = () => {
       title: "Food Recipes App",
       description: 'Design and creation of an application that gives the user information about recipes, bringing all the info, from an external API, using the endpoints that it provides, as well also, giving the user the possibility to create and save recipes in a own DataBase. ',
       imgUrl: projImg1,
-      button :<button className="botonProject" type="button" class="btn btn-secondary btn-lg" > <a href="https://app-gym-frontend.vercel.app/" style={{ textDecoration: 'none', color:"white" }}>See Project</a></button>,
+      button :<button className="botonProject" type="button" class="btn btn-secondary btn-lg" > <a href="https://github.com/ManuCasanueva/PI-Food" style={{ textDecoration: 'none', color:"white" }}>See Project</a></button>,
     },
     {
       title: "Gym Fit App",
