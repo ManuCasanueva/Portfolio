@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.svg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import cv from "../assets/Curriculum-Manuel.pdf"
 
 
 export const Banner = () => {
@@ -23,7 +24,7 @@ export const Banner = () => {
   }, [text])
 
   function downloadCV() {
-    const cvContent = "../assets/Curriculum-Manuel.pdf";
+    const cvContent = cv;
     const cvBlob = new Blob([cvContent], { type: 'application/pdf' });
     const cvURL = URL.createObjectURL(cvBlob);
     const downloadLink = document.createElement('a');

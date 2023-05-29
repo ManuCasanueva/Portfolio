@@ -70,9 +70,11 @@ input:focus, textarea:focus, select:focus {
 
 @media (min-width:1700px) {
 	main .container {
+    
 		max-width: 100%;
     height: 100%;
 		padding: 0 150px;
+    color: #000;
 	}
 }
 
@@ -85,7 +87,8 @@ p.danger {
 }
 /************ Navbar Css ************/
 nav.navbar {
-  padding: 0px 0;
+
+  padding: 18px 0;
   position: fixed;
   width: 100%;
   top: 0;
@@ -93,7 +96,8 @@ nav.navbar {
   transition:  0.32s ease-in-out;
 }
 nav.navbar.scrolled {
-  padding: 0px 0;
+  padding: 10px 0;
+  
   background-color: #121212;
 }
 nav.navbar a.navbar-brand {
@@ -194,6 +198,7 @@ span.navbar-text {
   color: #121212;
 }
 .navbar-text button:hover::before {
+  
 	content: "";
   color: #121212;
 	width: 100%;
@@ -255,6 +260,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-size: cover;
   background-repeat: no-repeat;
   height: auto;
+  position: relative;
 }
 
 @media screen and (min-width: 768px) {
