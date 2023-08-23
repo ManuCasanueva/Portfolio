@@ -89,10 +89,10 @@ p.danger {
 nav.navbar {
 
   padding: 18px 0;
-  position: fixed;
+  position: relative;
   width: 100%;
   top: 0;
-  z-index: 9999;
+  z-index: 10000;
   transition:  0.32s ease-in-out;
 }
 nav.navbar.scrolled {
@@ -399,6 +399,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 100%;
 }
 
+.pic {
+  max-width: 100%; /* Ensure the image doesn't exceed its container */
+  height: auto; /* Allow the image to adjust its height proportionally */
+}
+
 .project {
 
   padding: 10vw 0;
@@ -406,12 +411,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-image: linear-gradient(to top, #000000, #1f0c15, #331126, #46153d, #541c59);
 }
 
-@media only screen and (min-width: 768px) {
-  .project {
-    
-    padding: 80px 0;
-  }
-}
 .project h2 {
 	font-size: 45px;
 	font-weight: 700;
@@ -494,7 +493,7 @@ position: relative;
 .proj-imgbx::before {
   
   content: "";
-  background-image: linear-gradient(to right top, #0a244e, #26204e, #391b4a, #491443, #550c39);
+  background-image: linear-gradient(to right top, #0c192c, #242131de, #231e25f6, #252025, #201c1f);
   opacity: 0.95;
   position: absolute;
   width: 100%;
@@ -514,7 +513,7 @@ position: relative;
   transform: translate(-50%, -50%);
   transition: 0.5s ease-in-out;
   opacity: 0;
-  width: 90%; /* ajustar según tus necesidades */
+  width: 80%; /* ajustar según tus necesidades */
   height: auto;
 }
 
@@ -524,6 +523,12 @@ position: relative;
 }
 
 @media screen and (max-width: 767px) {
+  .pic{
+    height: 300px;
+  }
+  .proj-imgbx {
+    height: 300px; /* Adjust the height as needed */
+  }
   .proj-txtx {
     top: 70%; /* ajustar según tus necesidades */
     width: 100%;

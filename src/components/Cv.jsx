@@ -1,5 +1,5 @@
 import React from "react";
-import CV from "../assets/img/logos/CV-Manuel-Casanueva-English.pdf";
+import CV from "../assets/img/logos/CV-Fullstack-Manuel-Casanueva-En.pdf";
 import 'animate.css';
 
 
